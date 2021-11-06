@@ -17,13 +17,13 @@ function Input(){
     <div className="form">
       <div className="logoContainer">
         <p>
-          {state ? state : <img src={shLogo}/>}
+          {state ? state : <img src={shLogo} alt="main logo"/>}
         </p>
       </div>
       <div className="inputContainer">
-        <img src={Search} alt="" />
+        <img src={Search} alt="search Icon" />
         <input type="text" onChange={showText} className="searchBtn micBtn" /> 
-        <img src={Mic} alt="" />
+        <img src={Mic} alt="Mic Icon" />
       </div>
       <div className="btn">
           <button>Google Search</button>
@@ -32,11 +32,11 @@ function Input(){
           
       <div className="lang"> 
         Google offered in:
-        <a href="#">Hausa</a>
-        <a href="#">Igbo</a>
-        <a href="#">Èdè</a>
-        <a href="#">Yorùbá</a>
-        <a href="#">Pidgin</a>
+        <span> Hausa </span>
+        <span> Igbo </span>
+        <span> Èdè </span>
+        <span> Yorùbá </span>
+        <span> Pidgin </span>
       </div>
     </div>
   );
