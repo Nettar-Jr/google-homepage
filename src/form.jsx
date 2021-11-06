@@ -6,18 +6,17 @@ import Mic from './img/mic.png';
 
 function Input(){
 
-  const [state, setState] = useState(shLogo);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const showText = (props) => {
-    console.log(props);
-    setState(props.target.value);
+    setSearchTerm(props.target.value);
   }
 
   return (
     <div className="form">
       <div className="logoContainer">
         <p>
-          {state ? state : <img src={shLogo} alt="main logo"/>}
+          {searchTerm ? searchTerm : <img src={shLogo} alt="main logo"/>}
         </p>
       </div>
       <div className="inputContainer">
