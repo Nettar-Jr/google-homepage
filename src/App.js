@@ -1,10 +1,10 @@
 import './App.css';
-import Input from './form'
+import Main from './Main'
 
 function App() {
   return (
     <div className="App">
-      <Input />
+      <Main />
     </div>
   );
 }
