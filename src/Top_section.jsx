@@ -26,7 +26,7 @@ const Top =()=>{
 
             <img src={Menu} alt="menu icon" className="Menu-icon"/>
 
-            <button className="Top-menu-link Sign-In-btn"><span className="Btn-text">Sign In</span></button>
+            <button className="Sign-In-btn"><span className="Btn-text">Sign In</span></button>
 
             </div>
         
